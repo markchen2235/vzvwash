@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+.wrapper {
+  width: 1288px;
+}
+.navbar-brand h3 {
+  transition: all 1s;
+  font-weight: 700;
+}
+.navbar-brand h3:hover {
+  transform: scale(1.1);
+}
+.navbar-toggler {
+  background-color: grey!important;
+}
+.navbar-collapse li {
+  padding-left: 20px;
+}
+.navbar-collapse li a {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.navbar-collapse li a:hover {
+  transform: scale(1.1);
+}
+.banner {
+  margin: 10px auto;
+  background-color: skyblue;
+}
+.services {
+  position: relative;
+  overflow: hidden;
+  margin: 100px auto 0;
+  height: 300px;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.services ul {
+  padding-left: 0;
+}
+.services ul li {
+  text-align: left;
+  transition: all 1s;
+  padding: 3px 0;
+}
+.services ul li:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+.services p {
+  font-size: 24px;
+  font-weight: 700;
+}
+.services .wash {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  left: -400px;
+  top: 0;
+  text-align: left;
+  animation: car_wash 2s forwards ;
+  border: 1px solid whitesmoke;
+  padding: 15px;
+}
+.services .home-wash {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  right: -300px;
+  top: 0;
+  animation: house_wash 2s forwards;
+  border: 1px solid whitesmoke;
+  padding: 10px;
+}
+.services .home-wash p {
+  text-align: left;
+  font-size: 24px;
+}
+.testimonial {
+  margin: 100px auto;
+  opacity: 0;
+  transition: all 3s;
+  transform: translateY(500px);
+  overflow: hidden;
+}
+.testimonial p {
+  font-size: 24px;
+  font-weight: 700;
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.testimonial .box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 400px;
+}
+.testimonial .box div {
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  transition: all 1s;
+}
+.testimonial .box div:hover {
+  transform: translateY(-10px) scale(1.1);
+}
+.testimonial .box div img {
+  width: 290px;
+}
+.works {
+  margin: 100px auto;
+  opacity: 0;
+  transition: all 3s;
+  transform: translateY(500px);
+  overflow: hidden;
+}
+.works p {
+  font-size: 24px;
+  font-weight: 700;
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.works .box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 400px;
+}
+.works .box div {
+  width: 300px;
+  height: 200px;
+  transition: all 1s;
+  text-align: center;
+}
+.works .box div:hover {
+  transform: translateY(-10px) scale(1.1);
+}
+.works .box div img {
+  width: 290px;
+}
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px auto;
+  height: 500px;
+}
+.contact .left,
+.contact .right {
+  height: 500px;
+  width: 500px;
+  border: 1px solid whitesmoke;
+  transform: translateY(300px);
+  transition: all 1s;
+}
+.contact .left form,
+.contact .right form {
+  text-align: left;
+}
+.contact .left {
+  padding: 20px;
+  text-align: center;
+}
+.contact .left h4 {
+  font-weight: 700;
+  color: whitesmoke;
+}
+.contact .left p {
+  font-size: 16px;
+  text-align: left;
+  color: whitesmoke;
+}
+.contact .left p strong {
+  text-decoration: underline;
+}
+.contact .left a img {
+  width: 250px;
+}
+.contact .right {
+  padding: 20px;
+}
+.contact .right h4 {
+  font-weight: 700;
+  text-align: center;
+  color: whitesmoke;
+}
+.contact .right div {
+  display: flex;
+  font-weight: 700;
+  text-align: center;
+  color: whitesmoke;
+}
+.contact .right div span {
+  flex: 1;
+  text-align: left;
+}
+.contact .right div input {
+  flex: 2;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.contact .right div input::placeholder {
+  padding-left: 10px;
+  font-size: 14px;
+}
+.contact .right .text {
+  margin-top: 10px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+}
+.contact .right .text span {
+  flex: 1;
+}
+.contact .right .text textarea {
+  flex: 4;
+  resize: none;
+}
+.contact .right .text {
+  text-align: left;
+}
+.contact .right .submit {
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer {
+  margin: 0 auto 10px ;
+  height: 100px;
+}
+.footer .top,
+.footer .bottom {
+  text-align: center;
+  color: whitesmoke;
+  font-weight: 700;
+}
+.footer .top a {
+  margin: 0 5px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+.to {
+  position: fixed;
+  opacity: 0;
+  transition: all 1s;
+  transform: translateY(-150px);
+  top: 500px;
+  right: 200px;
+  width: 80px;
+  height: 80px;
+  font-size: 48px;
+  color: whitesmoke;
+  line-height: 80px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.review {
+  display: flex;
+  position: fixed;
+  opacity: 0;
+  transition: all 1s;
+  transform: translateY(-180px);
+  top: 400px;
+  right: 210px;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  text-align: center;
+}
+.review img {
+  width: 70px;
+  border-radius: 10px;
+  transition: all 1s;
+}
+.review img:hover {
+  transform: scale(1.2);
+}
+@keyframes car_wash {
+  to {
+    left: 0;
+  }
+}
+@keyframes house_wash {
+  to {
+    right: 0;
+  }
+}
+@media (max-width: 1300px) {
+  .banner {
+    width: 1000px;
+  }
+  .services {
+    width: 1000px;
+    height: 360px;
+  }
+  .services .home-wash,
+  .services .wash {
+    width: 350px;
+    height: 350px;
+  }
+  .testimonial {
+    width: 910px;
+  }
+  .testimonial .box {
+    width: 920px;
+    height: 620px;
+    justify-content: space-evenly;
+  }
+  .works {
+    width: 910px;
+  }
+  .works .box {
+    width: 920px;
+    height: 620px;
+    justify-content: space-evenly;
+  }
+  .contact {
+    height: 1020px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact .left {
+    margin-bottom: 20px;
+  }
+  .footer {
+    width: 1000px;
+  }
+}
+@media (max-width: 1000px) {
+  .banner {
+    width: 800px;
+  }
+  .services {
+    width: 350px;
+    height: 750px;
+  }
+  .services .home-wash {
+    top: 400px;
+  }
+  .services li {
+    font-size: 14px;
+  }
+  .testimonial,
+  .testimonial .box {
+    width: 610px;
+    height: 510px;
+    align-content: flex-start;
+    margin-bottom: 10px;
+  }
+  .testimonial div :nth-child(3n),
+  .testimonial .box div :nth-child(3n) {
+    display: none;
+  }
+  .footer {
+    width: 800px;
+  }
+  .works,
+  .works .box {
+    width: 610px;
+    height: 510px;
+    align-content: flex-start;
+    margin-bottom: 10px;
+  }
+  .works div :nth-child(3n),
+  .works .box div :nth-child(3n) {
+    display: none;
+  }
+  .contact .right p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 800px) {
+  .banner {
+    width: 600px;
+  }
+  .testimonial,
+  .testimonial .box {
+    width: 300px;
+  }
+  .testimonial .box {
+    height: 800px;
+  }
+  .testimonial .box div {
+    height: 210px;
+  }
+  .contact {
+    width: 300px;
+  }
+  .contact .left,
+  .contact .right {
+    width: 300px;
+  }
+  .contact .left p {
+    font-size: 12px;
+  }
+  .contact .left a img {
+    width: 200px;
+  }
+  .contact .right form div {
+    height: 40px;
+  }
+  .contact .right form div span {
+    height: 40px;
+    font-size: 12px;
+    width: 130px;
+  }
+  .contact .right form div input {
+    width: 150px;
+    height: 40px;
+  }
+  .contact .right form textarea {
+    height: 200px;
+  }
+  .contact .right .submit .btn {
+    text-align: center;
+    font-size: 14px;
+    height: 30px;
+    width: 60px;
+    padding: 0;
+  }
+  .works,
+  .works .box {
+    width: 300px;
+  }
+  .works .box {
+    height: 800px;
+  }
+  .works .box div {
+    height: 230px;
+  }
+  .contact .right p {
+    font-size: 14px;
+  }
+  .footer .footer {
+    width: 600px;
+  }
+  .to {
+    right: 150px;
+    top: 400px;
+  }
+  .review {
+    right: 150px;
+    top: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .banner {
+    width: 400px;
+    margin-top: 20px;
+  }
+  .testimonial {
+    margin-top: 30px;
+  }
+  .works {
+    margin-top: 30px;
+  }
+  .footer {
+    width: 300px;
+  }
+  .to {
+    right: 50px;
+    top: 700px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 32px;
+  }
+  .review {
+    right: 50px;
+    top: 600px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
